@@ -1,0 +1,9 @@
+{
+  "name": "client",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "scripts": {
+    "start": "npm i",
+    "build": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1"
+  }
+}
