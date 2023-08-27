@@ -26,6 +26,10 @@ router.get('/api', async (ctx) => {
     ctx.body = "<h1>Hello World!</h1>"
 });
 
+router.post('/clicked', async (ctx) => {
+    ctx.body = "<h1>:P</h1>"
+});
+
 app.use(router.routes());
 
 app.use(serve(path.join(__dirname, '../../client/public')));
