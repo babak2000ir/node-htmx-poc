@@ -42,6 +42,18 @@
   <button hx-post="/clicked" hx-trigger="click" hx-target="#root" hx-swap="outerHTML">
     Click Me!
   </button>
+  <div>CONTINUES DELAY
+  <div hx-post="/mouse_entered" hx-trigger="mouseenter delay:1s">
+    [Here Mouse, Mouse!]
+  </div></div>
+  <div>CONTINUES THROTTLE
+    <div hx-post="/mouse_entered" hx-trigger="mouseenter throttle:1s">
+      [Here Mouse, Mouse!]
+    </div></div>
+  <div>ONCE
+  <div hx-post="/mouse_entered" hx-trigger="mouseenter once">
+    [Here Mouse, Mouse!]
+  </div></div>
 </body>
 
 </html>

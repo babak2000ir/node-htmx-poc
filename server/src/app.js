@@ -30,6 +30,10 @@ router.post('/clicked', async (ctx) => {
     ctx.body = "<h1>:P</h1>"
 });
 
+router.post('/mouse_entered', async (ctx) => {
+    ctx.body = `<h1>${new Date()}</h1>`
+});
+
 app.use(router.routes());
 
 app.use(serve(path.join(__dirname, '../../client/public')));
