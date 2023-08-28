@@ -43,17 +43,23 @@
     Click Me!
   </button>
   <div>CONTINUES DELAY
-  <div hx-post="/mouse_entered" hx-trigger="mouseenter delay:1s">
-    [Here Mouse, Mouse!]
-  </div></div>
+    <div hx-post="/mouse_entered" hx-trigger="mouseenter delay:1s">
+      [Here Mouse, Mouse!]
+    </div>
+  </div>
   <div>CONTINUES THROTTLE
     <div hx-post="/mouse_entered" hx-trigger="mouseenter throttle:1s">
       [Here Mouse, Mouse!]
-    </div></div>
+    </div>
+  </div>
   <div>ONCE
-  <div hx-post="/mouse_entered" hx-trigger="mouseenter once">
-    [Here Mouse, Mouse!]
-  </div></div>
+    <div hx-post="/mouse_entered" hx-trigger="mouseenter once">
+      [Here Mouse, Mouse!]
+    </div>
+  </div>
+  <input type="text" name="q" hx-post="/echo" hx-trigger="keyup changed delay:500ms" hx-target="#search-results"
+    placeholder="Search...">
+  <div id="search-results"></div>
 </body>
 
 </html>
